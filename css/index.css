@@ -1,0 +1,435 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 1180px;
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+}
+
+/* Beranda */
+
+.logo h3{
+    font-size: 48px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.menu{
+    float: right;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: relative;
+    top: 0;
+    background: black;
+    z-index: 1;
+    border: 1 solid black;
+    border-bottom: 2px solid white;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 16px 0 16px;
+}
+
+nav ul li a.active{
+    background: white;
+    padding: 16px 16px;
+    border-radius: 18px;
+    color: black;
+}
+
+nav ul li a:hover{
+    color: black;
+    background: white;
+    padding: 16px 16px;
+    border-radius: 18px;
+}
+
+section{
+    margin: auto;
+    display: flex;
+    margin-bottom: 48px;
+    padding: auto;
+    background: rgba(247, 243, 243, 0.5);
+    border: none;
+    border-radius: 20px;
+}
+
+.col{
+    margin: 0px 24px 0 24px;
+    padding: 12px 12px;
+}
+
+.col .date{
+    margin-top: 80px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.col .deskripsi{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: black;
+    margin-top: 48px;
+}
+
+section .col h3{
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 48px;
+    color: black;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru{
+    background: blue;
+    color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover{
+    color: white;
+    background: rgb(180, 23, 49);
+    padding: 15px 20px;
+}
+
+section p{
+    margin: 8px 0;
+    padding: 10px 0;
+}
+
+.col .deskripsi-1{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: black;
+    margin-top: 100px;
+}
+
+button{
+    background-color: blue;
+    border: none;
+    padding: 12px 12px;
+    border-radius: 12px;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+button:hover{
+    background: rgb(180, 23, 49);
+    color: white;
+    padding: 12px 12px;
+}
+
+.middle{
+    text-align: center;
+    width: 100%;
+    padding: 18px 0;
+}
+
+.col .deskripsi-2{
+    color: black;
+    font-weight: bold;
+    font-size: 48px;
+    font-family: 'comic sans ms';
+}
+
+.text-box{
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 16px 0;
+}
+
+.text-1{
+    width: 380px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.x img{
+    padding-top: 26px;
+    width: 80px;
+    height: 100px;
+}
+
+.partner{
+    width: 240px;
+    height: 170px;
+}
+
+.bsi{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    font-family: 'comic sans ms';
+}
+
+.contact{
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 16px 0;
+}
+
+.contact-us{
+    width: 380px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.contact-us table{
+    padding: 0px 8px;
+}
+
+.contact-us h4{
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 18px;
+}
+
+.contact-us p{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-us a:hover{
+    color:black;
+}
+
+table{
+    width: 100%;
+    padding: 12px 36px;
+    text-align: left;
+}
+
+table tr td{
+    padding: 2px 2px;
+}
+
+.footer{
+    background: black;
+    padding: 18px 0;
+    display: ruby-text;
+}
+
+h6{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Inputan */
+
+table input[type="text"], textarea, input[type="date"], select, input[type="number"]{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: black;
+    font-size: 16px;
+}
+
+.contact-us input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    padding: 12px 12px;
+    border-radius: 12px;
+    background: blue;
+}
+
+.contact-us input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(180, 23, 49);
+    color: white;
+}
+
+
+/* Data Barang Masuk $ Keluar */
+
+.data-masuk p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 12px 0;
+    margin-left: 30px;
+}
+
+form{
+    margin-left: 30px;
+}
+
+.barang{
+    padding: 20px 120px;
+    width: 400px;
+    height: 400px;
+}
+
+.data-masuk input[type="submit"]{
+    border: none;
+    outline: none;
+    margin-left: 246px;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    padding: 12px 12px;
+    border-radius: 12px;
+    background: blue;
+}
+
+.data-masuk input[type="reset"]{
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    padding: 12px 12px;
+    border-radius: 12px;
+    background: blue;
+}
+
+.data-masuk input[type="submit"], input[type="reset"]:hover{
+    cursor: pointer;
+    background: rgb(180, 23, 49);
+    color: white;
+}
+
+/* Hasil Inputan */
+
+.data-input{
+    margin-left: 120px;
+    margin-right: 60px;
+}
+
+.data-input p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 12px 0;
+    margin-left: 60px;
+}
+
+
+@media screen and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+
+    .logo h3{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu{
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul{
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li{
+        display: inline-block;
+        float: none;
+    }
+    
+    section{
+        display: block;
+    }
+
+    section img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .col{
+        width: 80%;
+    }
+
+    .middle{
+        width: 80%;
+    }
+
+    section .x img.x-1{
+        margin-left: 40px;
+    }
+
+    .text-box{
+        width: 100%;
+    }
+
+    .text-1{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+
+}
